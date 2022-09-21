@@ -1,0 +1,96 @@
+\chapter{Monte Carlo}
+	
+	\section{Monte Carlo integration}
+
+		Classical integration methods can be given by the Riemann sum, or better by the trapezoidal formula or the Simpson rule. For $d$-dimen-\\sional of $N$-body simulations, the convergence is slow, even slower for higher $d$. This implies finding a better method for carrying integrations. The Monte Carlo provides this.
+
+		In general, consider a quantity $f$ distributed with a Gaussian with mean value $\ev f$ and variance $\sigma^2$. Then, an unbiased estimator for $\ev f$ is 
+		\be \overline f = \frac 1 N \sum_{i=1}^N f_i \ee
+		and the error of this estimator is
+		\be \Delta = \frac{\sigma}{\sqrt{N}} \ee
+		To compute this, use the unbiased estimator the variance and thus the standard error of averages from uncorrelated estimates is
+		\be \Delta = \sqrt{\frac{\ev{\overline{f^2} - \overline{f}^2}}{N-1}} \ee
+		
+		Often, the function integrated is peaked around a small region of the phase space and has a large variance, hence a large error, and a lot a time is wasted to compute the integral is the regions where $f$ does not lie. Hence, instead of picking $\vb* x_i$ randomly uniformly, choose them according to a probability distribution $p(\vb* x)$. This is called this importance sampling.
+
+		The integral can be taken approximately as
+		\be \ev f = \frac 1 \Omega \int \dd x \ f(\vb* x) \stackrel{\text{estimator}}{=} \frac 1 N \sum_{i=1}^N  f(\vb* x_i) \ee
+		but this method is not ideal. Hence, via importance sampling, write
+		\be \ev f = \frac 1 \Omega \int \dd x \ \frac{f(\vb* x)}{p(\vb* x)} p(\vb* x) \stackrel{\text{estimator}}{=} \frac 1 N \sum_{i=1}^N  \frac{f(\vb* x_i)}{p(\vb* x_i)} \ee
+		taking $p$ similar to $f$, which leads to the ratio $\frac f p$ being almost constant so that the its variance and hence its error being small.
+
+	\section{Metropolis-Hastings algorithm}
+
+		Before introducing the Metropolis-Hastings algorithm, first present the Markov chain. A Markov chain is a Markov process that allows to create a $p$-distributed configurations from scratch. The chain is constructed as
+		\be x_0 \rightarrow x_1 \rightarrow x_2 \rightarrow \cdots \rightarrow x_n \rightarrow x_{n+1} \rightarrow \cdots \ee
+		staying in $1$D for simplicity. It must have the property that
+		\be \mc P(x_{n+1}=j | x_n=i_n, \dotsc, x_0=i_0) = \mc P(x_{n+1}=j | x_n=i_n) \ee
+		meaning that the information from the previous steps is not relevant for the next step; this is memoryless. Define the transition probability as 
+		\be w_{ij} = \mc P(x_1 = j  | x_0=i) \ee
+		and the chain is said to be homogeneous if
+		\be \mc P(x_{n+1}=j | x_n=i) = \mc P (x_n=j | x_{n-1}=i) \ee
+		which is the one one will consider from now on. The transition matrix of the chain is given by $W=(w_{ij})$. The goal here is to find the distribution $p$, to which the Markov chain must converge. Hence, the Markov chain Monte Carlo method aims at generating randomly $N$ states $(x_1,\dotsc, x_N)$ according to the distribution $p$, creating $x_{n+1}$ only from $x_n$, thus creating the transition matrix $W$ so that for any distribution $\mu$
+		\be W^k \mu \xrightarrow{k\to \infty} p \ee
+		thus, so that $\mu$ converges towards the distribution $p$ one wants to sample.
+
+		The Metropolis-Hastings algorithm ensures that the Markov chain converges towards $p$. It requires some properties. These are, noting the notation $W_{xy} = W(x|y)$
+		\begin{description}
+			\item[Normalization] $\sum_y W(x|y) = 1$
+			\item[Ergodicity] $\forall x,y,\ \exists n\ | \ W^n(x|y) \neq 0$
+			\item[Detailed balance] $p(x)W(y|x) = p(y) W(x|y)$
+		\end{description}
+		The ergodicity condition means that it is possible to reach any configuration $x$ from any other $y$ in a finite number of Markov steps. The algorithm is done by splitting $W$ into two factors. When moving from $x$ to $y$, first select $y$ with probability $g(y|x) \neq 0$ and accept or reject the candidate with acceptance probability $A(y|x)$ as
+		\be W(y|x) = \begin{cases} g(y|x) A(y|x) & y \neq x \\ 1- \sum_{x'\neq x} W(x'|x) & y=x \end{cases} \ee
+		The detailed balance condition then becomes
+		\be \frac{A(y|x)}{A(x|y)} = \frac{p(y)}{p(x)} \frac{g(x|y)}{g(y|x)} \ee
+		so that $A$ has to be chosen as
+		\be A(y|x) = \begin{cases} F\left(\frac{p(y)}{p(x)} \frac{g(x|y)}{g(y|x)} \right) & \text{if } g(y|x) \neq 0 \\ 0 & \text{otherwise} \end{cases} \ee
+		with $F: ]0,\infty] \to ]0,1]$ satisfying
+		\be F(k) = k F\left(\frac 1 k \right) \ee
+		and thus here one can choose $F(k)= \min(1,k)$. The algorithm is therefore as follows
+		\begin{itemize}
+			\item generate the initial state $x_0$
+			\item at step $n$, generate $y_{n+1}$ with the law $g(y_{n+1}|x_n)$
+			\item select a number $a\in[0,1]$ with uniform probability
+			\item if $a<A(y_{n+1}|x_n)$ accept the candidate $x_{n+1} =y_{n+1}$, else reject it $x_{n+1} = x_n$
+		\end{itemize}
+
+		As an example of relevant Metropolis-Hastings algorithms for spin lattices, consider the single-spin-flip algorithm. It enables to study thermodynamics of spin systems at equilibrium. Hence, sample the states with Boltzmann distribution 
+		\be p(x) = \frac 1 Z e^{-\beta E(x)} \ee
+		on an Ising model of $N$ spins. Then, the selection is taken as
+		\be g(y|x) = \begin{cases} \frac 1 N & \text{if } x \text{ and } y \text{ differ by a single spin flip} \\ 0 & \text{otherwise} \end{cases} \ee
+		and the acceptance
+		\be A(y|x) = \min\left( 1, \frac{p(y)}{p(x)} \right) = \min\left( 1, e^{-\beta[E(y)-E(x)]} \right) \ee
+
+	\section{Autocorrelations}
+
+		As saw in the beginning, the error is easily computed when the observations are uncorrelated. But for Monte Carlo process, one needs to take into account the correlations between configurations. Denote by $f(t)$ the measurement of $f$ at the $t$-th Monte Carlo step. Taking $N \to \infty$, the error becomes
+		\be \begin{split} \Delta^2 &= \frac{\ev{\overline{f^2} - \overline{f}^2}}{N-1} + \frac{2}{N^2} \sum_{t=1}^N \sum_{\delta t=1}^{N-t} \ev{f(t)f(t+\delta)} - \ev{f}^2 \\ &= \frac{\ev{\overline{f^2} - \overline{f}^2}}{N-1} [1 + 2\tau_f ] \end{split} \ee
+		assuming that
+		\be \ev{f(t)f(t+\delta t)} - \ev{f}^2 \propto e^{-\frac{\delta t}{\tau_f}} \ee
+		with the autocorrelation time
+		\be \tau_f = \frac{\sum_{\delta t=1}^{\infty} \ev{f(t)f(t+\delta)} - \ev{f}^2}{\ev{f^2} - \ev{f}^2} \ee
+
+		To find a more reliable way to estimate the autocorrelation time, use the binning analysis. Starting for the original measurements $f_i^{(0)}$, $i=1,\dotsc,N$ iteratively create binned series by averaging over consecutive entries
+		\be f_i^{(l)} = \frac 1 2 \left[f_{2i-1}^{(l-1)} + f_{2i}^{(l-1)} \right] \qq{with} i = 1,\dotsc, N_l \ee
+		with $N_l = 2^{-l}N$. Basically, the bin averages $f_i^{(l)}$ are less correlated than the original values, keeping the mean value intact. The errors now become
+		\be \Delta^{(l)} = \sqrt{\frac{\ev{\overline{f^{(l) \ 2}} - \overline{f^{(l)}}^2}}{N_l-1}} \ee
+		and increases as a function of the bin size $2^l$. For $2^l \gg \tau_f$recover the correct error estimate
+		\be \Delta = \lim_{l\to \infty} \Delta^{(l)} \ee
+		The autocorrelation time is found, if convergence, as
+		\be \tau_f = \lim_{l\to \infty} \frac 1 2 \left[\left(\frac{\Delta^{(l)}}{\Delta^{(0)}}\right)^2 -1 \right] \ee
+		But if no convergence is obtained, $\tau_f$ is much longer and must run longer simulation to find reliable error estimates.
+
+		For functions of measurements like
+		\be \ev U = \frac{\ev A}{\ev B} \ee
+		it becomes difficult to perform binning analysis because of error propagation and cross-correlations. Therefore, us Jackknife analysis instead. Again split the measurements into $M$ bins of size $\frac N M \gg \tau$. Now, instead of evaluating $U$ in each of the bins obtaining the error estimate out of the variance of these estimates, which is not good since too small number of measurements lie in each bin, use the following. Work with $M+1$ evaluations of $U$, $U_0$ being the estimate using all bins and $U_i$, $i=1,\dotsc,M$ when all bins except the $i$-th are used. Then a larger data set is used. Hence the resulting estimation for $U$ is
+		\be \ev U = U_0-(M-1)(\overline U -U_0) \qq{with} \overline U = \frac 1 M \sum_{i=1}^M U_i \ee
+		with error
+		\be \begin{split} \Delta &= \sqrt{\frac{M-1}{M} \sum_{i=1}^M U_i^2 - \overline{U}^2} \\ &=  \sqrt{(M-1)\left(\overline{U^2}- \overline{U}^2\right)} \end{split} \ee 
+
+		Finally, one can talk about equilibration, or thermalization. The Markov chain converges only asymptotically. Hence, Monte Carlo measurements should be started only after a large number of steps which mist be much larger than the thermalization time
+		\be \tau^{(\text{th})}_f = \frac{\sum_{\delta t = 1}^\infty \ev{f(0) f(\delta t)} - \ev{f}^2}{\ev{f(0)}\ev{f(\delta t)}-\ev{f}^2} \ee
+		It can be shown that the thermalization time is the maximum of all autocorrelation times. In practice, thermalize at least $10$ times $\tau_f^{(\text{th})}$ before starting measurements.
+
+
+

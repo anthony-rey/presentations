@@ -1,0 +1,335 @@
+\chapter{Fractional Quantum Hall Effect}
+
+	\section{Landau's solutions on the disk and the cylinder}
+	
+		To begin with, just briefly recall the solutions of the Landau's problem both on the disk and the cylinder. To remind the context, one is basically just studying the movement of free \electron on a plane under the action of a magnetic field. The Hamiltonian for such an \electron is
+		\begin{equation}
+		    \mathcal{H}=\frac{1}{2m}\left(\vb*{p}+e\vb*{A}\right)^2
+		\end{equation}
+
+		In the Landau gauge, take the vector potential to be
+		\begin{equation}
+		    \vb*{A}=Bx\vb*{e_y}
+		\end{equation}
+		which leads to a magnetic field
+		\begin{equation}
+		    \vb*{B}=\curl{\vb*{A}}=B\vb*{e_z}
+		\end{equation}
+		With this gauge the Hamiltonian reads
+		\begin{equation}
+		    \mathcal{H}=\frac{1}{2m}p_x^2+\frac{1}{2m}\left(p_y+eBx\right)^2
+		\end{equation}
+		Hence, observe that there is an obvious translational invariance in the $y$-direction since the Hamiltonian commutes with $p_y$. Translational invariance in the $y$-direction but not in the $x$ direction means the system topologically is a cylinder. One can therefore look for energy eigenstates that are also eigenstates of $p_y$, which are of course plane waves. This means one can search for eigenstates of the following separable form
+		\begin{equation}
+		    \psi_k(x,y)=e^{iky}\varphi_k(x)
+		\end{equation}
+		Under the action of the Hamiltonian, this wavefunction becomes
+		\begin{equation} \begin{split}
+		    \mathcal{H}\psi_k(x,y) &=\left[\frac{1}{2m}p_x^2+\frac{1}{2m}\left(\hbar k+eBx\right)^2\right]\psi_k(x,y) \\ &= \mathcal{H}_k\psi_k(x,y)
+		\end{split}
+		\end{equation}
+		where it can be defines the following partial Hamiltonian
+		\begin{equation}
+		    \mathcal{H}_k=\frac{p_x^2}{2m}+\frac{1}{2}m\frac{e^2B^2}{m^2}\left(x+k\frac{\hbar}{eB}\right)^2=\frac{p_x^2}{2m}+\frac{1}{2}m\omega_\text{C}^2\left(x+kl_B^2\right)^2
+		\end{equation}
+		with $\omega_\text{C}=\frac{eB}{m}$ the cyclotron frequency and $l_B=\sqrt{\frac{\hbar}{eB}}$ the magnetic length. This is a harmonic oscillator with frequency $\omega_\text{C}$, centered at $x=-kl_B$, therefore see that the energy eigenvalues do not depend on $k$
+		\begin{equation}
+		    E_n=\hbar\omega_\text{C}\left(n+\frac12\right)
+		\end{equation}\\
+
+		One can also consider the symmetric gauge in which the vector potential is
+		\begin{equation}
+		    \vb*{A}=-\frac12\vb*{r}\times\vb*{B}=-\frac{By}{2}\vb*{e_x}+\frac{Bx}{2}\vb*{e_y}
+		\end{equation}
+		Even though this choice of gauge breaks the translational symmetry in both the $x$- and the $y$-directions, one will see it does preserve rotational symmetry about the origin. The system topologically is a disk. As one will see, this also means angular momentum is a good quantum number. With an algebraic approach, one can easily prove that a basis of LLL wavefunctions are given by
+		\begin{equation}
+		    \psi_\text{LLL}(z, \bar{z})\sim\left(\frac{z}{l_B}\right)^m e^{-|z|^2/4l_B^2}
+		\end{equation}
+		where $m$ is the angular momentum and $z = x-iy$. The energy, as for the Landau gauge, only depends on $n$ and not on $m$. By defining 
+		\begin{equation}
+		    \partial=\frac12\left(\frac{\partial}{\partial x}+ i\frac{\partial}{\partial y}\right)\quad\text{and}\quad\bar{\partial}=\frac12\left(\frac{\partial}{\partial x}- i\frac{\partial}{\partial y}\right)
+		\end{equation}
+		one can convince oneself that the angular momentum operator is
+		\begin{equation}
+		    L_z = i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)=-\hbar\left(z\partial-\bar{z}\bar{\partial}\right)
+		\end{equation}
+		and then, acting on the wavefunctions yields
+		\begin{equation}
+		    L_z\psi_\text{LLL}(z,\bar{z})=-\hbar m\psi_\text{LLL}(z, \bar{z})
+		\end{equation}
+		So $m$ is the orbital momentum. One can derive a general expression for higher LLs which are simply quoted here
+		\begin{equation}
+		    \psi_{nm}(z,\bar{z})=\frac{\left(-1\right)^n}{\sqrt{2\pi}}\sqrt{\frac{n!}{2^m(m+n)!}}z^m\mathrm{e}^{-|z|^2/4l_B^2}L_n^m\left(\frac{|z|^2}{2}\right)
+		\end{equation}
+		where $L_n^m$ is the associated generalized Laguerre polynomial.
+
+	\section{Degeneracy of filled Landau levels}
+		
+		Each LLhas degenerate orbitals labeled by $k$ in the Landau gauge and $m$ in the symmetric gauge. This degeneracy is the same in each Landau level and depends only on the area of the sample $A$ and the magnetic field $B$.
+		One of the advantages of the symmetric gauge is that it can provide an algebraic derivation of the degeneracies of LLs. As just seen, the wavefunctions form concentric rings around the origin. This is very different from the wavefunctions found with the Landau gauge, which were strips. The wavefunction with angular momentum $m$ is peaked on a ring of radius $ R \sim \sqrt{2m}l_B$. Therefore, if one considers a disk of area $\pi R^2$, the number of states in it is roughly
+		\begin{equation}
+		    \mathcal{N}_\phi=\frac{R^2}{2l_B^2}=\frac{A}{2\pi l_B^2}=\frac{AB}{\phi_0}=\frac{\phi}{\phi_0}
+		\end{equation}
+		with
+		\begin{equation}
+		    \phi_0=\frac{h}{e}\simeq 4.14\cdot 10^{-15}~\mathrm{T/m^2}
+		\end{equation}
+		the quantum of flux. For instance, consider a sample of area $A=1~\mathrm{cm^2}$ subjected to a magnetic field of $B=1~\text{T}$. Then each Landau level has a total of $2.4\cdot 10^{10}$ possible states. Therefore see that LLs are extremely degenerate.\\
+
+		This has an important consequence. To see this, let $\mathcal{N}_e$ be the number of \electron and $\hbar\omega_\text{I}$ be the characteristic energy of the interaction. For instance, for the Coulomb interaction this energy typically is
+		\begin{equation}
+		    \hbar\omega_\text{I}=\frac{e^2}{4\pi\varepsilon_0l_B}
+		\end{equation}
+		Without any interaction, the energy is minimized by simply filling all LLs in the ascending order. For instance, suppose one has $\mathcal{N}_e=2\mathcal{N}_\phi$: just fill the two first LLs, \emph{ie} 0 and 1. Now if one adds the interaction, for it to do something it has to take an \electron from one of the two first LLS to the level 2, which costs either $\hbar\omega_C$ or $2\hbar\omega_C$. If $\omega_\text{I}\ll\omega_\text{C}$, this is impossible and one can just forget the interactions. Now, consider $\mathcal{N}_e=\frac32\mathcal{N}_\phi$. The level 0 is fully filled and the level 1 is partially filled. What was just said before is still valid for the levels 0 and 2. But now the interaction can also move an \electron in another state of the level 1 since it is not filled anymore. However this does not cost anything now: the interaction necessarily is the dominant term here and thus cannot be neglected anymore. Now that the interactions are no more in competition with anything else, they can give rise to interesting phases just like the FQHE's ones.\\
+
+		With that being said, once one has written the Hamiltonian as
+		\begin{equation}
+		    \mathcal{H}=V=\sum A_{m_1,m_2,n_2,n_1}c^\dagger_{m_1}c^\dagger_{m_2}c_{n_2}c_{n_1}
+		\end{equation}
+		one can just forget the $c^\dagger$ operators that create orbitals in the level $n=1$. In other terms, one can project the interactions on the LLL. Basically it means that if one is studying the state $\ket{n=1, m_1}\otimes\ket{n=1,m_2}$, one can study the state $\ket{n=0, m_1}\otimes\ket{n=0, m_2}$ instead, this is just for more convenient calculations, as the wavefunctions quickly become hard to write down.
+
+	\section{Coulomb interaction matrix elements}
+	
+		With all that has just been said, it is quite logical to compute the Coulomb interaction matrix elements. For convenience purposes, do this calculation on the disk and only in the LLL $n=0$. As seen before, the wavefunctions are then
+		\begin{equation}
+		    \psi_{0,m}(z,\bar{z})=\frac{1}{\sqrt{2\pi2^mm!}}z^m e^{-|z|^2/4l_B^2}
+		\end{equation}
+		and the Coulomb interaction of course is
+		\begin{equation}
+		    V(|\vb*{r}_1-\vb*{r}_2|)=\frac{e^2}{4\pi\varepsilon_0}\frac{1}{|\vb*{r}_1-\vb*{r}_2|}\
+		\end{equation}
+		In order to simplify a bit the calculations, one can take the unit of length to be the magnetic length $l_B$ and the unit of interaction energy to be $e^2/4\pi\varepsilon_0l_B$. With this in mind, the 2-body Coulomb matrix element in the LLL is defined as 
+		\be \begin{split}
+		    \bra{p, q}V\ket{m,n} &=\int\dd^2\vb*{r}_1\ \dd^2\vb*{r}_2\ \bar{\psi}_{0,p}(\vb*{r}_1)\bar{\psi}_{0,q}(\vb*{r}_2) \\ &\cdot \frac{1}{|\vb*{r}_1-\vb*{r}_2|}\psi_{0,m}(\vb*{r}_1)\psi_{0,n}(\vb*{r}_2)\\
+		    &=\frac{1}{\sqrt{(2\pi)^42^{p+q+m+n}p!q!m!n!}} \\ &\cdot \int\dd^2z_1\ \dd^2z_2\ \frac{\bar{z}_1^{p}\bar{z}_2^{q}z_1^{m}z_2^{n}}{|z_1-z_2|}e^{-\frac12\left(|z_1|^2+|z_2|^2\right)}
+		\end{split} \ee
+		where $p$, $q$, $m$ and $n$ are angular momentum quantum numbers. To compute this integral one can make the substitution which consists in transforming to the relative and center of mass coordinates
+		\begin{equation}
+		\left\{\begin{matrix}
+		Z & = & \frac{z_1+z_2}{2} \\ 
+		z & = & z_1-z_2
+		\end{matrix}\right.\Longrightarrow \left\{\begin{matrix}
+		z_1 & = & Z+\frac{z}{2}\\ 
+		z_2 & = & Z-\frac{z}{2}
+		\end{matrix}\right.
+		\end{equation}
+		and similar expression for the complex conjugates. One can check the Jacobian for this substitution is unity, \emph{ie} $\dd^2z_1\,\dd^2z_2=\dd^2Z\,\dd^2z$. One can also easily prove
+		\begin{equation}
+		    |z_1|^2+|z_2|^2=z_1\bar{z}_1+z_2\bar{z_2}=2Z\bar{Z}+\frac12z\bar{z}=2|Z|^2+\frac12|z|^2
+		\end{equation}
+		allowing to make a binomial expansion
+		\be \begin{split}
+		    & \quad \bra{p,q}V\ket{m,n} \\ &=\mathcal{A}_{mn}^{pq}\int\dd^2Z\ \dd^2z\ \sum_{\substack{i=0,j=0 \\k=0,l=0}}^{p,q,m,n}\frac{(-1)^{q+n-j-l}}{2^{p+q+m+n}} \\ &\cdot \mathcal{C}_p^i\mathcal{C}_q^j\mathcal{C}_m^k\mathcal{C}_n^l\bar{Z}^{i+j}Z^{k+l}\bar{z}^{p+q-i-j}z^{m+n-k-l}\frac{e^{-|Z|^2-\frac12|z|^2}}{|z|}\\
+		    &=\mathcal{A}_{nm}^{pq}\sum_{\substack{i=0,j=0 \\k=0,l=0}}^{p,q,m,n}\mathcal{B}_{pqmn}^{ijkl}\int\dd^2Z\ \dd^2z\ \bar{Z}^{\mu_1}\bar{z}^{\mu_2}Z^{\mu_3}z^{\mu_4}\frac{e^{-|Z|^2-\frac12|z|^2}}{|z|}
+		\end{split} \ee
+		So one sees that, after transforming to the center of mass and relative coordinates, typical terms in the integrand are of the form
+		\begin{equation}
+		    \bar{Z}^{\mu_1}\bar{z}^{\mu_2}Z^{\mu_3}z^{\mu_4}
+		\end{equation}
+		with $\mu_1+\mu_2=p+q$ and $\mu_3+\mu_4=m+n$. These integrals vanish unless $\mu_1=\mu_3$ and $\mu_2=\mu_4$ which implies $p+q=m+n$. In other terms, the Coulomb interaction conserves the total angular momentum. Explicit expressions for the precedent matrix elements can be found in the literature, one just quotes here a form particularly useful for numerical studies obtained by Tsiper:
+		\be \begin{split}
+		    \bra{m+p, n}V\ket{m, n+p}&=\sqrt{\frac{(m+p)!(n+p)!}{m!n!}}\frac{\Gamma(m+n+p+\frac32)}{\pi2^{m+n+p+2}} \\ &\cdot \left(A_{mn}^pB_{nm}^p+B_{mn}^pA_{nm}^p\right)
+		\end{split} \ee
+		where $A_{mn}^p$ and $B_{mn}^p$ are sums of positive terms. This means this expresses the matrix element as a sum of positive terms, which makes it numerically more stable.
+	
+	\section{Landau levels quantization on the sphere}
+
+		To motivate the context, one already solved the quantization of LLs on different topologies, one will pass to the sphere for its interesting practical aspects and for the whole formalism that has been developed around it, enabling to formulate FQHE, introducing it in a sense the interactions between particles.
+		 \begin{itemize}
+		     \item No boundaries for the sphere
+		     \item Less topology degeneracy
+		 \end{itemize}
+		These are the two main differences between the sphere and the other topologies --- disk, cylinder, torus.\\
+
+		Technically, the level quantization on the sphere is represented with the behavior of charged particles on the surface of a sphere within which one assumes a punctual source of magnetic field, a monopole. Assume a radial magnetic field of strength
+		\begin{equation}
+		    B = \frac{\hbar cs_0}{eR^2}
+		\end{equation}
+		with the number of Dirac magnetic flux quanta through the sphere being 
+		\begin{equation}
+		    \frac{\Phi_\text{tot}}{\Phi_0} = 2s_0
+		\end{equation}
+		that must be an integer due to Dirac monopole quantization condition. The Hamiltonian is given by
+		\begin{equation}
+		    \mc H = \frac{\vb* \Lambda^2}{2MR^2}
+		\end{equation}
+		where $\vb* \Lambda = \vb* r \times [i\nabla + e \vb* A(\vb* r)]$ is the dynamical angular momentum. Using the definition of the vector potential and the results of spherical coordinate one gets
+		\begin{equation}
+		\vb* \Lambda = -i\left( \vb* e_{\varphi}\frac{\partial}{\partial\theta} - \vb* e_{\theta}\frac{1}{\sin\theta}\frac{\partial}{\partial\varphi}\right) + eR[\vb* e_r\times \vb* A(\vb* r)]
+		\end{equation}
+		One sees that $\vb* \Lambda$ has no radial component and is now seeking for the generator of rotations so has to look at the algebraic structure of our dynamical quantity $\vb* \Lambda$. Get
+		\begin{equation}
+		    [\Lambda^i,\Lambda^j] = i\varepsilon^{ijk}(\Lambda^k - s_0e_r^k)
+		\end{equation}
+		Doing the change of variable $\vb* L = \vb* \Lambda + s_0\vb* e_r$ one gets the algebraic structure one was looking for
+		\begin{equation}
+		    [L^i,X^j] = i\varepsilon^{ijk}X^k
+		\end{equation}
+		For $\vb* X = \vb* \Lambda, \vb* L,\vb* e_r$. Hence it is the proper angular momentum which implies a possible quantization. Note that $\vb* L$ has a radial component $L \vb* e_r = s_0$. Taking the eigenvalue of $\vb* L$ to be $s(s+1)$, thus have $s = s_0 + n$ with $n$ an integer. Finally obtain
+		\begin{equation}
+		    \Lambda^2 = L^2 - s_0^2
+		\end{equation}
+		which gives the energy levels
+		\begin{equation}
+		    E_n = \omega_c\left[\left(n + \frac{1}{2}\right) + \frac{n(n+1)}{2s_0}\right]
+		\end{equation}
+		The $n$ index is thus the LL.
+
+		To find the eigenstate one has to choose a gauge, the choice is made towards the latitudinal gauge
+		\begin{equation}
+		    \vb* A = -\vb* e_{\varphi}\frac{s_0}{eR}cot\theta
+		\end{equation}
+		The dynamical angular momentum then becomes
+		\begin{equation}
+		    \vb* \Lambda = -i\left( \vb* e_{\varphi}\frac{\partial}{\partial\theta} - \vb* e_{\theta}\frac{1}{\sin\theta}\left(\frac{\partial}{\partial\varphi} -i s_0 \cos\theta \right)\right) 
+		\end{equation}
+		It is possible to introduce spinor coordinates for the particle position, as
+		\begin{equation}
+		    u = \cos{\frac{\theta}{2}e^{i\frac{\varphi}{2}}} \qq{and}
+		    v = \sin{\frac{\theta}{2}e^{-i\frac{\varphi}{2}}}
+		\end{equation}
+		such that
+		\begin{equation}
+		    \vb* e_r = \Omega(u,v) = (u,v)\sigma \begin{pmatrix} \bar{u}\\
+		    \bar{v}
+		    \end{pmatrix}
+		\end{equation}
+		where $\sigma$ is the vector made of the three Pauli matrices. A complete orthogonal basis, spanning the LLL --- $n=0$ and $s=s_0$ --- is given by
+		\begin{equation}
+		    \Psi^s_{m,0}(u,v) = u^{s+m}v^{s-m}
+		\end{equation}
+		And the following identities hold $L^z\Psi^s_{m,0} = m\Psi^s_{m,0}$ and $\mc H\Psi^s_{m,0} = \frac{1}{2}\omega_c\Psi^s_{m,0}$. One can verify this by introducing more general states with an additional quantum number $p$
+		\be\begin{aligned}
+		    \phi_{m,p}^s(u,v)&=\left(\cos{\frac\theta 2}\right)^{s+m}\left(\sin\frac\theta 2\right)^{s-m}e^{i\left(m-p\right)\varphi}\\
+		    &=\begin{cases}
+		\bar{v}^{-p}u^{s+m}v^{s-m+p} & \text{if } p<0\, \\ 
+		\bar{u}^pu^{s+m-p}v^{s-m} & \text{otherwise}
+		\end{cases}
+		\end{aligned} \ee
+		And compute the action of $\Lambda^2$ :
+		\be \begin{aligned}
+		    & \quad \Lambda^2\phi_{m,p}^s \\ &=\left[s-\left(\frac{s\cos\theta-m}{\sin\theta}\right)^2+\left(\frac{s_0\cos\theta-m+p}{\sin\theta}\right)^2\right]\phi_{m,p}^s\\
+		    &=\left[s+\frac{2\left(s\cos\theta-m+p\right)\left(p-n\cos\theta\right)-\left(p^2-n^2\cos^2\theta\right)}{\sin^2\theta}\right]\phi_{m,p}^s
+		\end{aligned} \ee
+		Putting $p$ and $n$ to zero yields the previous results. Finally, one can see that in the LLL, the angular momentum can be written as
+		\begin{equation}
+		    \vb* L = \frac{1}{2}(u,v)\sigma \begin{pmatrix} \frac{\partial}{\partial u}\\
+		   \frac{\partial}{\partial v}
+		    \end{pmatrix}
+		\end{equation}
+		This form is actually very important for the next step, which is a generalization to higher LLs.\\
+
+		In his formalism Haldane restricted himself to the LLL. Now expand the results one already has.	One already knows that on a plane one can describe the Hilbert space with two commuting ladder algebras $a$ and $b$. Here in the sphere topology one can by analogy present a similar formalism involving two mutually commuting SU(2) algebras. It both are angular momentum SU(2) algebras. The first one related to the cyclotron momentum $S$ --- raise or lower the LL index --- and the second one for the guiding center $L$ --- that rotate the states while staying in the same LL. Looking at the form of $L$ and the fact that in the spinor coordinates formalism the eigenstate basis is made of power laws of $u$ and $v$, one can relate $u$, $v$, $\partial_u$ and $\partial_v$ as the Schwinger boson creation and annihilation operators. Note that since $S^2$ and $L^2$ have the same eigenvalues introducing S was not obvious even if it is mandatory to fully describe the Hilbert space and thus generalize to higher LLs. To complete the description one would also need $\bar{u}$, $\bar{v}$, $\partial_{\bar{u}}$ and $\partial_{\bar{v}}$. Using the Schwinger picture get
+		\be \begin{split} S^x + iS^y = S^+ &= u \pdv{\bar v} - v \pdv{\bar u} \\ S^x - iS^y = S^- &= \bar v \pdv{u} - \bar u \pdv{v} \\ S^z &=\frac 1 2 \left[u\pdv{u} + v\pdv{v} - \bar u\pdv{\bar u}- \bar v\pdv{\bar v}\right] \end{split} \ee
+		and the same for $L$
+		\be \begin{split}  L^x + iL^y = L^+ &= u \pdv{v} - \bar v \pdv{\bar u} \\ L^x - iL^y = L^- &= v \pdv{u} - \bar u \pdv{\bar v} \\ L^z &=\frac 1 2 \left[u\pdv{u} - v\pdv{v} - \bar u\pdv{\bar u} + \bar v\pdv{\bar v}\right] \end{split} \ee
+		That can be written in the compact form
+		\begin{equation}
+		   L = \frac{1}{2}(u,v)\sigma \begin{pmatrix} \frac{\partial}{\partial u}\\
+		\frac{\partial}{\partial v}
+		\end{pmatrix} - \frac{1}{2}(\bar{u},\bar{v})\sigma^\top \begin{pmatrix} \frac{\partial}{\partial \bar{u}}\\
+		\frac{\partial}{\partial \bar{v}}
+		\end{pmatrix}
+		\end{equation}
+		and
+		\begin{equation}
+		   S = \frac{1}{2}(u,\bar{v})\sigma \begin{pmatrix} \frac{\partial}{\partial u}\\
+		\frac{\partial}{\partial \bar{v}}
+		\end{pmatrix} - \frac{1}{2}(\bar{u},v)\sigma^\top \begin{pmatrix} \frac{\partial}{\partial \bar{u}}\\
+		\frac{\partial}{\partial v}
+		\end{pmatrix}
+		\end{equation}
+		One gets the algebra identities
+		\begin{equation}
+		  [S^i,S^j] = i\varepsilon^{ijk}S^k \quad
+		  [L^i,L^j] = i\varepsilon^{ijk}L^k \qq{and}
+		  [S^i,L^j] = 0
+		\end{equation}
+		and also 
+		\begin{equation}
+		  L^2 = S^2 = s(s+1)
+		\end{equation}
+		identifying
+		\begin{equation}
+		  s = \frac{1}{2}\left[u\frac{\partial}{\partial u} + v\frac{\partial}{\partial v} + \bar{u}\frac{\partial}{\partial \bar{u}} + \bar{v}\frac{\partial}{\partial \bar{v}} \right]
+		\end{equation}
+		Looking at the component of $L$ normal to the surface of the sphere, get $\vb* e_r L = S^z$. Hence the physical Hilbert space is limited to state that has $s_0$ as eigenvalues of $S^z$. Using $[S^+,S^-] = 2S^z$, obtain the Hamiltonian 
+		\begin{equation}
+		  \mc H = \omega_c\left(\frac{1}{2s_0}S^+S^{-} + \frac{1}{2}\right)
+		\end{equation}
+		Thus $S^-$ and $S^+$ indeed play the role of raising and lowering operators and obtain the final result
+		\begin{equation}
+		\Psi^s_{m,n} = (S^-)^n\Psi^s_{m,0}
+		\end{equation}
+
+		Now for a many-body physical system one would like to find an appropriate basis for the filling of Landau level. By some mathematical argument and the previous results one can construct it. For instance for a 2-body system, one can use the total angular momentum and the relative one as the quantum number indexing the states. Using some simple consideration on those quantum number, one can see that the projection onto the $(n+1)^\text{th}$ LL of any rotational invariant operator can be expanded as
+		\begin{equation}
+		    \Pi_nV\Pi_n = \sum_l^{2s}V^n_lP_{2s-l}(L_1+L_2)
+		\end{equation}
+		where $P_j$ is the projector onto the states with total angular momentum $j(j+1)$. The coefficient $V^n_l$ are the so-called pseudopotentials. One can use that to express the effect of an interaction potential such as a Coulomb one which gives as pseudopotential coefficients in the LLL
+		\begin{equation}
+		    V^0_l = \frac{\binom{2l}{l}\binom{8s+2-2l}{4s+1-l}}{\binom{4s+2}{2s+1}}
+		\end{equation}
+	
+	\section{Introduction of pseudopotentials}
+
+		Start with a general interaction Hamiltonian in the LLL for the many-body system
+		\be \mc H = \sum_{\substack{m_1+m_2\\=m_3+m_4}} A_{m_1,m_2}^{m_3,m_4} \mel{m_3,m_4}{V}{m_1,m_2} c^\dagger_{m_3} c^\dagger_{m_4} c_{m_1} c_{m_2} \ee
+		and focus on the $2$-body matrix element in the basis $\ket{M,m}$, with $M$ the total angular momentum and $m$ the relative angular momentum. One can relate
+		\be \ket{m_1,m_2} = \sum_{M,m} N_{m_1,m_2}^{M,m} \ket{M,m} \ee
+		with in terms of the Clebsch-Gordan coefficients. Now seeking for a central potential $V(\vb* r)$, it must be diagonal in the basis $\ket{M,m}$ since it must conserve the $M$ and $m$. Also, it should depend only on $m$. Then
+		\be \mel{M',m'}{V(\vb* r)}{M,m} = \delta_{M'M} \delta_{m'm} \ev{V(\vb* r)}{m} \ee
+		which allows to write the interaction
+		\be \mc H = \sum_{M,m} V_m \dyad{M,m} \ee
+		with the Haldane's pseudopotentials
+		\be V_m = \ev{V(\vb* r)}{m} \ee
+
+	\section{Exact ground state}
+
+		Here the aim is to find a potential that emerges from simple considerations, which turns out to give the Laughlin states as being the daughter states of the interaction and from which can be written any other central potential. First take a 2D central potential, and write its Fourier transform
+		\be \begin{split} V(\vb* k) &= \int \dd^2 r \ V(\vb* r) e^{-i \vb* k \cdot \vb* r} \\ &= \int_0^\infty \dd r \ r V(r) \int_0^{2\pi} \dd \vartheta \ e^{ikr \cos \vartheta} \\ &= 2\pi \int_0^\infty \dd r \ r V(r) J_0(kr) \end{split} \ee
+		where the Bessel functions of the first kind have been introduced. Recalling their expression
+		\be J_n (x) = \sum_{p=0}^\infty \frac{(-1)^p x^{2p+n}}{2^{2p+n} p! \Gamma(p+n+1)} \ee
+		and not focusing on the multiplying factors, one can expand
+		\be V(\vb* k) = \sum_{p=0}^\infty B_p (-k^2)^p \ee
+		Remembering the identification $\nabla^2 \leftrightarrow -k^2$ since
+		\be \widehat{\nabla^2 \delta}(\vb* r) = \int \dd^2 k \ (-k^2)e^{i \vb* k \cdot \vb* r} \ee
+		the potential recover its real-space-form as
+		\be V(\vb* r) = \sum_{p=0}^\infty A_p \nabla^{2p} \delta(\vb* r) \label{eq:laplpseudo} \ee
+
+		Now it is possible to relate any other central potential to the one in \eqref{eq:laplpseudo} by finding the $A_p$. First write the pseudopotentials in the Fourier space
+		\be V_m = \int \frac{\dd^2 k}{(2\pi)^2} \ V(\vb* k) \ev{e^{i \vb* k \cdot \vb* r}}{m} \ee
+		Perform the transformation
+		\be \vb* k \cdot \vb* r = \frac{\bar k z + k \bar z}{2} = \frac{\bar k(a + b^\dagger) + k(a^\dagger + b)}{\sqrt 2} \ee
+		and neglect the $a,a^\dagger$ since they do not contribute in the LLL, to give
+		\be \begin{split} \ev{e^{-i \vb* k \cdot \vb* r}}{m} &= \ev{e^{i \frac{\bar kb^\dagger + kb}{\sqrt 2}}}{m} \\ &= e^{-\frac{k \bar k}{2}} \ev{e^{i\frac{\bar kb^\dagger}{\sqrt 2}} e^{i\frac{kb}{\sqrt 2}}}{m} \\ &= e^{-\frac{k^2}{2}} \sum_{j=0}^\infty \frac{1}{(j!)^2} \ev{\left(i\frac{\bar kb^\dagger}{\sqrt 2} \right)^j \left(i\frac{kb}{\sqrt 2}\right)^j}{m} \\ &= e^{-\frac{k^2}{2}}  \sum_{j=0}^m \frac{(-k^2)^j}{2^j j!} \frac{m!}{j!(m-j)!} \\ &= e^{-\frac{k^2}{2}} L_m\left(\frac{k^2}{2} \right)\end{split} \label{eq:planemel} \ee
+		having used the relation for $j \leq m$
+		\be b^j \ket m = \sqrt{\frac{m!}{(m-j)!}} \ket{m-j} \ee
+		and introduced the Laguerre polynomials in the closed form
+		\be L_m(x) = \sum_{j=0}^m \binom{m}{j} \frac{(-1)^j x^j}{j!} \ee
+		From this one can expand again
+		\be V(\vb* r) = \sum_{j=0}^\infty V_j L_j(-\nabla^2) \delta(\vb* r) \ee
+		and thus possible to relate to the \eqref{eq:laplpseudo} as
+		\be A_p = \sum_{j=p}^\infty \binom{j}{j-p} \frac{V_j}{p!} \ee
+
+		Why are these $\nabla^{2p} \delta(\vb* r)$ potentials interesting ? They are the most simple non-trivial potentials for fermions, taking $p$ odd. They appear to be almost local but mostly short-range. To observe how these two-points potentials act on Laughlin states, take their form in the disk geometry
+		\be \psi_{M,m} = \braket{\vb* r}{M,m} \sim (z_1 + z_2)^M (z_1 - z_2)^m e^{-\frac{\abs{z_1}^2 + \abs{z_2}^2}{4}} \ee
+		having set $l_B = 1$. Perform the change of variables
+		\be Z = \frac{z_1+z_2}{2} \qq{and} z= z_1 - z_2 \ee
+		and take into account the normalization, get
+		\be \psi_{M,m} = \frac{Z^M}{\sqrt{\pi M!}} \frac{z^m}{\sqrt{2\pi 2^{2m+1} m!}} e^{-\frac{\abs{z}^2}{8}-\frac{\abs{Z}^2}{2}} \ee
+		Consider only the dependence on $m$ in the state and the interaction \eqref{eq:laplpseudo} with $p=1$. Then
+		\be \begin{split} V_m &= \ev{\nabla^2 \delta^{(2)}(\vb* r)}{m} \\ &= \int \dd z \dd \bar z \ \nabla^2 \delta^{(2)}(\vb* r) \abs{\psi_m}^2 \\ &\stackrel{\text{IBP}}{=} \int \dd z \dd \bar z \ \delta(z)\delta(\bar z) \nabla^2 \abs{\psi_m}^2 \end{split} \ee
+		First notice that the boundary terms have been neglected, since the dependence on a Gaussian. Then
+		\be \nabla^2 = \partial_x^2 + \partial_y^2 = (\partial_x + i\partial_y)(\partial_x - i\partial_y) = \partial_z \partial_{\bar z} \ee
+		which allows to compute
+		\be \begin{split} \nabla^2 \abs{\psi_m}^2 &\sim \partial_z (z^m \bar z^{m-1} + z^{m+1}\bar z^m) e^{-z \bar z} \\ &\sim (z^{m-1} \bar z^{m-1} + z^m \bar z^m + z^{m+1}\bar z^{m+1}) e^{-z \bar z} \end{split} \ee
+		and plugin it into the integral, the term $V_m$ vanishes unless $m=1$, since any dependence in $z$ or $\bar z$ gives $0$ due to the Dirac $\delta$. This forces the conclusion that the Laughlin-$\frac 1 3$ state is the most compact ground state of the interaction, which is then the parent Hamiltonian of this system of interacting fermions. The most compact since any multiplication by a non-constant symmetric polynomial in $z,\bar z$ makes the radius $R \sim \sqrt{2m}$ increase and the $m=0$ no longer used. Hence pursuing the derivation
+		\be \nabla^{2p} \abs{\psi_m}^2 \sim \sum_{j=-p}^p c_j z^{m-j}\bar z^{m-j} e^{-z\bar z} \ee
+		and the states with $m>p$ will have no contribution. Avoiding the singularities, take the only vanishing term is $m=p$. That confirms the focus on the $p$ odd terms.
+
+		There is also a connection to make with these matrix elements in the higher LLs. Indeed, \\electron interacting with a $V(\vb* r)$ in higher LLs is equivalent to take a effective potential $V_\text{eff}(\vb* r)$ the LLL
+		\be \mel{n,m'_1;n,m'_2}{V(\vb* r)}{n,m_1;n,m_2} = \mel{m'_1,m'_2}{V_\text{eff}(\vb* r)}{m_1,m_2} \ee
+		with, derived in the same way as in \eqref{eq:planemel},
+		\be V_\text{eff}(\vb* k) = L_n^2 \left(\frac{k^2}{2}\right) V(\vb* k) \ee
+

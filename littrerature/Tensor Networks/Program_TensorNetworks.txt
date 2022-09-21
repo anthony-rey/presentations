@@ -1,0 +1,28 @@
+Week 1
+Suggested outline
+0. What is a tensor network, a MPS? Stress pictorial representation (10 )
+1. exact representation of AKLT (VBS) (15)
+2. what is SVD and its use (include all the proofs) (30)
+3. Entanglement entropy + Schmidt decomposition + density matrix formalism (25)
+4. Area law of entanglement (15)
+5. Using MPS , compute the correlation length  (example in AKLT) (20)
+
+Suggested reading
+Orus paper: Section 1 to 5.1, and 6.1
+Schollwoeck paper:  section 3 and 4 except 4.4
+
+
+Week 2: "MRG" algorithms for ground states
+0. MPO (section 5 of Schollwoeck)
+1. Right and Left canonical state (section 4.4 Schollwoeck)
+2. DMRG with MPS formalism (section 6.1, 6.2 & 6.3 of Schollwoeck)
+3. PEPS and iPEPS as ansatz for wavefunctions 
+4. CTMRG as contraction algorithm for iPEPS and observables in 2d. (Orus & Vidal paper)
+
+
+Week 3: (Imaginary) Time evolutions
+- imaginary time, Trotter-Suzuki decomposition  (Orus 7.2), https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.98.070201
+- iTEBD in 1D   (Schollwoeck 7.3.2)
+- Simple update for PEPS  (Corboz slides / https://link.aps.org/doi/10.1103/PhysRevB.82.245119, only consider 1st neighbor)
+- Full update? (Corboz slides / https://link.aps.org/doi/10.1103/PhysRevB.92.035142)
+

@@ -1,0 +1,45 @@
+\documentclass[a4paper,11pt,twoside,openright,titlepage,
+               headinclude,footinclude,BCOR5mm,
+               numbers=noenddot,cleardoublepage=empty,
+               fleqn]{scrreprt}
+               
+\input{setup.tex}
+
+\addbibresource{frontBackMatter/bibliography.bib}
+
+\begin{document}
+    
+    \pagenumbering{gobble}
+    \pagestyle{plain}
+    \input{frontBackMatter/titlepage.tex}
+    \input{frontBackMatter/titleback.tex}
+    
+    \cleardoublepage
+    
+    \pagestyle{scrheadings} 
+    \input{frontBackMatter/contents.tex}
+    
+    \cleardoublepage
+    
+    \pagenumbering{arabic}
+    
+    \part{Analytical}
+    \include{chapters/antiferro.tex}
+    \include{chapters/ferro.tex}
+    \include{chapters/sc}
+    \include{chapters/vbs.tex}
+    \include{chapters/kitaev.tex}
+    \include{chapters/fqhe.tex}
+
+    \part{Numerical}
+    \include{chapters/exact.tex}
+    \include{chapters/montecarlo.tex}
+    \include{chapters/series.tex}
+    \include{chapters/tn.tex}
+
+    \nocite{*}
+    \printbibliography
+
+    \clearpage
+
+\end{document}

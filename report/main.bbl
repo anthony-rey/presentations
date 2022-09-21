@@ -1,0 +1,1247 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{affleck2004rigorous}{incollection}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a947b64dcc23ff78f9e6ce799bd832bd}{%
+           family={Affleck},
+           familyi={A\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e28e07ff9674143b08ab4410d7daeeab}{%
+           family={Kennedy},
+           familyi={K\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=298133a6b79dcce8ef5f6cb15b60f119}{%
+           family={Lieb},
+           familyi={L\bibinitperiod},
+           given={Elliott\bibnamedelima H},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e94d78a7b40e83c1144df9b3e52a1250}{%
+           family={Tasaki},
+           familyi={T\bibinitperiod},
+           given={Hal},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c6dd5e61ca2fcaca182250f9bf705802}
+      \strng{fullhash}{491c945704a0bf4a1af49f64b92cb42b}
+      \strng{bibnamehash}{491c945704a0bf4a1af49f64b92cb42b}
+      \strng{authorbibnamehash}{491c945704a0bf4a1af49f64b92cb42b}
+      \strng{authornamehash}{c6dd5e61ca2fcaca182250f9bf705802}
+      \strng{authorfullhash}{491c945704a0bf4a1af49f64b92cb42b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Condensed Matter Physics and Exactly Soluble Models}
+      \field{title}{Rigorous results on valence-bond ground states in antiferromagnets}
+      \field{year}{2004}
+      \true{nocite}
+      \field{pages}{249\bibrangedash 252}
+      \range{pages}{4}
+    \endentry
+    \entry{auerbach2012interacting}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6512d9cd36f4ab090012cf8e6976468b}{%
+           family={Auerbach},
+           familyi={A\bibinitperiod},
+           given={Assa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{6512d9cd36f4ab090012cf8e6976468b}
+      \strng{fullhash}{6512d9cd36f4ab090012cf8e6976468b}
+      \strng{bibnamehash}{6512d9cd36f4ab090012cf8e6976468b}
+      \strng{authorbibnamehash}{6512d9cd36f4ab090012cf8e6976468b}
+      \strng{authornamehash}{6512d9cd36f4ab090012cf8e6976468b}
+      \strng{authorfullhash}{6512d9cd36f4ab090012cf8e6976468b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Interacting electrons and quantum magnetism}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{baskaran1993resonating}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d8c34c121e0478add9d48effb6723def}{%
+           family={Baskaran},
+           familyi={B\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f153e7b445a3e2552e5a95aabb3a43bc}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Z},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=847b0698d138c139548ed0a7422a6a16}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={PW},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{410b5b88be07b90dbeb78c9002142b4e}
+      \strng{fullhash}{a9dc429c43036e697f04606a507dabc7}
+      \strng{bibnamehash}{a9dc429c43036e697f04606a507dabc7}
+      \strng{authorbibnamehash}{a9dc429c43036e697f04606a507dabc7}
+      \strng{authornamehash}{410b5b88be07b90dbeb78c9002142b4e}
+      \strng{authorfullhash}{a9dc429c43036e697f04606a507dabc7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Solid state communications}
+      \field{number}{11-12}
+      \field{title}{The resonating valence bond state and high-Tc superconductivity—a mean field theory}
+      \field{volume}{88}
+      \field{year}{1993}
+      \true{nocite}
+      \field{pages}{853\bibrangedash 856}
+      \range{pages}{4}
+    \endentry
+    \entry{bruognolo2021beginner}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0b860a542bbca7c4768a372abfd08039}{%
+           family={Bruognolo},
+           familyi={B\bibinitperiod},
+           given={Benedikt},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f087f160df130e6bafac0b7c641f977e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jheng-Wei},
+           giveni={J\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc8657e87346eec5c0e15953879f598c}{%
+           family={Delft},
+           familyi={D\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b4badb948d77b70c70a05553e1eef6e3}{%
+           family={Weichselbaum},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Stichting SciPost}%
+      }
+      \strng{namehash}{5f8eb8bcf3744d641e56ce79dd16ad68}
+      \strng{fullhash}{a873da2a169d6a1212e10996875ef7f0}
+      \strng{bibnamehash}{a873da2a169d6a1212e10996875ef7f0}
+      \strng{authorbibnamehash}{a873da2a169d6a1212e10996875ef7f0}
+      \strng{authornamehash}{5f8eb8bcf3744d641e56ce79dd16ad68}
+      \strng{authorfullhash}{a873da2a169d6a1212e10996875ef7f0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SciPost Physics Lecture Notes}
+      \field{title}{A beginner's guide to non-abelian iPEPS for correlated fermions}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{025}
+      \range{pages}{1}
+    \endentry
+    \entry{corboz2010simulation}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ed63fdd4111d1315987467d940a45488}{%
+           family={Corboz},
+           familyi={C\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=220e5a12680385b58fbfac3e4405944d}{%
+           family={Orús},
+           familyi={O\bibinitperiod},
+           given={Román},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=068222b65b72f8fc41261b1a56b40002}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Bela},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe10cf33913e45c3685598c8b35bc209}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Guifré},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{eb7cfeb9aa779ab4c4fda9387b267742}
+      \strng{fullhash}{a66be9a6faa1c8526bcff83660429ff1}
+      \strng{bibnamehash}{a66be9a6faa1c8526bcff83660429ff1}
+      \strng{authorbibnamehash}{a66be9a6faa1c8526bcff83660429ff1}
+      \strng{authornamehash}{eb7cfeb9aa779ab4c4fda9387b267742}
+      \strng{authorfullhash}{a66be9a6faa1c8526bcff83660429ff1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{16}
+      \field{title}{Simulation of strongly correlated fermions in two spatial dimensions with fermionic projected entangled-pair states}
+      \field{volume}{81}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{165104}
+      \range{pages}{1}
+    \endentry
+    \entry{fano1986configuration}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=aac9507b5850335f4ec82377fc1b4094}{%
+           family={Fano},
+           familyi={F\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bea9d597ed738f51fda9a74162874dd0}{%
+           family={Ortolani},
+           familyi={O\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1eb3d2a62e255a6525c2549d32b4852d}{%
+           family={Colombo},
+           familyi={C\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d03f360a6ef72c5fffdff91cc35b7ea7}
+      \strng{fullhash}{a0fe3bfe6099b9ebc4481aa29d48d1b9}
+      \strng{bibnamehash}{a0fe3bfe6099b9ebc4481aa29d48d1b9}
+      \strng{authorbibnamehash}{a0fe3bfe6099b9ebc4481aa29d48d1b9}
+      \strng{authornamehash}{d03f360a6ef72c5fffdff91cc35b7ea7}
+      \strng{authorfullhash}{a0fe3bfe6099b9ebc4481aa29d48d1b9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{4}
+      \field{title}{Configuration-interaction calculations on the fractional quantum Hall effect}
+      \field{volume}{34}
+      \field{year}{1986}
+      \true{nocite}
+      \field{pages}{2670}
+      \range{pages}{1}
+    \endentry
+    \entry{fazekas1999lecture}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6d628446b1d15a892ab0d29ab4bd9fd6}{%
+           family={Fazekas},
+           familyi={F\bibinitperiod},
+           given={Patrik},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {World scientific}%
+      }
+      \strng{namehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{fullhash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{bibnamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{authorbibnamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{authornamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{authorfullhash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lecture notes on electron correlation and magnetism}
+      \field{volume}{5}
+      \field{year}{1999}
+      \true{nocite}
+    \endentry
+    \entry{greiter2011landau}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=92cf7a11c78fb7eedb4bc4fa8a46d8cc}{%
+           family={Greiter},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{92cf7a11c78fb7eedb4bc4fa8a46d8cc}
+      \strng{fullhash}{92cf7a11c78fb7eedb4bc4fa8a46d8cc}
+      \strng{bibnamehash}{92cf7a11c78fb7eedb4bc4fa8a46d8cc}
+      \strng{authorbibnamehash}{92cf7a11c78fb7eedb4bc4fa8a46d8cc}
+      \strng{authornamehash}{92cf7a11c78fb7eedb4bc4fa8a46d8cc}
+      \strng{authorfullhash}{92cf7a11c78fb7eedb4bc4fa8a46d8cc}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{11}
+      \field{title}{Landau level quantization on the sphere}
+      \field{volume}{83}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{115129}
+      \range{pages}{1}
+    \endentry
+    \entry{haldane1983fractional}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8c93876876ff3141620227a27932d95f}{%
+           family={Haldane},
+           familyi={H\bibinitperiod},
+           given={F\bibnamedelima Duncan\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{8c93876876ff3141620227a27932d95f}
+      \strng{fullhash}{8c93876876ff3141620227a27932d95f}
+      \strng{bibnamehash}{8c93876876ff3141620227a27932d95f}
+      \strng{authorbibnamehash}{8c93876876ff3141620227a27932d95f}
+      \strng{authornamehash}{8c93876876ff3141620227a27932d95f}
+      \strng{authorfullhash}{8c93876876ff3141620227a27932d95f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{7}
+      \field{title}{Fractional quantization of the Hall effect: a hierarchy of incompressible quantum fluid states}
+      \field{volume}{51}
+      \field{year}{1983}
+      \true{nocite}
+      \field{pages}{605}
+      \range{pages}{1}
+    \endentry
+    \entry{haldane1985finite}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8c93876876ff3141620227a27932d95f}{%
+           family={Haldane},
+           familyi={H\bibinitperiod},
+           given={F\bibnamedelima Duncan\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c87a156221221e5338b800759cabaa68}{%
+           family={Rezayi},
+           familyi={R\bibinitperiod},
+           given={Edward\bibnamedelima H},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{af77a3e188e6ecee29a37aa70d7f2bc7}
+      \strng{fullhash}{af77a3e188e6ecee29a37aa70d7f2bc7}
+      \strng{bibnamehash}{af77a3e188e6ecee29a37aa70d7f2bc7}
+      \strng{authorbibnamehash}{af77a3e188e6ecee29a37aa70d7f2bc7}
+      \strng{authornamehash}{af77a3e188e6ecee29a37aa70d7f2bc7}
+      \strng{authorfullhash}{af77a3e188e6ecee29a37aa70d7f2bc7}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{3}
+      \field{title}{Finite-size studies of the incompressible state of the fractionally quantized Hall effect and its excitations}
+      \field{volume}{54}
+      \field{year}{1985}
+      \true{nocite}
+      \field{pages}{237}
+      \range{pages}{1}
+    \endentry
+    \entry{jain2007composite}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a137b714869dd6bf609f44eb09975b39}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Jainendra\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{a137b714869dd6bf609f44eb09975b39}
+      \strng{fullhash}{a137b714869dd6bf609f44eb09975b39}
+      \strng{bibnamehash}{a137b714869dd6bf609f44eb09975b39}
+      \strng{authorbibnamehash}{a137b714869dd6bf609f44eb09975b39}
+      \strng{authornamehash}{a137b714869dd6bf609f44eb09975b39}
+      \strng{authorfullhash}{a137b714869dd6bf609f44eb09975b39}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composite fermions}
+      \field{year}{2007}
+      \true{nocite}
+    \endentry
+    \entry{jiang2008accurate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=aacb8ecc27584738be28496ffb40fa02}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Hong-Chen},
+           giveni={H\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1005a78ab13dbc2abe4ab654f7b0fce6}{%
+           family={Weng},
+           familyi={W\bibinitperiod},
+           given={Zheng-Yu},
+           giveni={Z\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20de9f859b0b9bfb12fa85f3513c2fc1}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{b973fdd5ab149e409f64729fb1d4bbab}
+      \strng{fullhash}{6e212e8af9535dbe42643cc13157b624}
+      \strng{bibnamehash}{6e212e8af9535dbe42643cc13157b624}
+      \strng{authorbibnamehash}{6e212e8af9535dbe42643cc13157b624}
+      \strng{authornamehash}{b973fdd5ab149e409f64729fb1d4bbab}
+      \strng{authorfullhash}{6e212e8af9535dbe42643cc13157b624}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{9}
+      \field{title}{Accurate determination of tensor network state of quantum lattice models in two dimensions}
+      \field{volume}{101}
+      \field{year}{2008}
+      \true{nocite}
+      \field{pages}{090603}
+      \range{pages}{1}
+    \endentry
+    \entry{jordan2008classical}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=26c1a0594d27b61a80a9c81b63246dd6}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cda77595d5f195a633733c78b370f2aa}{%
+           family={Orús},
+           familyi={O\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3f8c6663f1fa635f1b95e9d2da51116}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Guifre},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{14a063090a3decda4f60c4944bad3dff}
+      \strng{fullhash}{35e4a9fc7284e71bbde49cd09c8f574c}
+      \strng{bibnamehash}{35e4a9fc7284e71bbde49cd09c8f574c}
+      \strng{authorbibnamehash}{35e4a9fc7284e71bbde49cd09c8f574c}
+      \strng{authornamehash}{14a063090a3decda4f60c4944bad3dff}
+      \strng{authorfullhash}{35e4a9fc7284e71bbde49cd09c8f574c}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{25}
+      \field{title}{Classical simulation of infinite-size quantum lattice systems in two spatial dimensions}
+      \field{volume}{101}
+      \field{year}{2008}
+      \true{nocite}
+      \field{pages}{250602}
+      \range{pages}{1}
+    \endentry
+    \entry{kitaev2006anyons}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59949d44a3903dfabb88bff3220ff2e0}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{59949d44a3903dfabb88bff3220ff2e0}
+      \strng{fullhash}{59949d44a3903dfabb88bff3220ff2e0}
+      \strng{bibnamehash}{59949d44a3903dfabb88bff3220ff2e0}
+      \strng{authorbibnamehash}{59949d44a3903dfabb88bff3220ff2e0}
+      \strng{authornamehash}{59949d44a3903dfabb88bff3220ff2e0}
+      \strng{authorfullhash}{59949d44a3903dfabb88bff3220ff2e0}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Physics}
+      \field{number}{1}
+      \field{title}{Anyons in an exactly solved model and beyond}
+      \field{volume}{321}
+      \field{year}{2006}
+      \true{nocite}
+      \field{pages}{2\bibrangedash 111}
+      \range{pages}{110}
+    \endentry
+    \entry{kotliar1988resonating}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=627180cd0517be2323caf5b86bcebeee}{%
+           family={Kotliar},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{627180cd0517be2323caf5b86bcebeee}
+      \strng{fullhash}{627180cd0517be2323caf5b86bcebeee}
+      \strng{bibnamehash}{627180cd0517be2323caf5b86bcebeee}
+      \strng{authorbibnamehash}{627180cd0517be2323caf5b86bcebeee}
+      \strng{authornamehash}{627180cd0517be2323caf5b86bcebeee}
+      \strng{authorfullhash}{627180cd0517be2323caf5b86bcebeee}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{7}
+      \field{title}{Resonating valence bonds and d-wave superconductivity}
+      \field{volume}{37}
+      \field{year}{1988}
+      \true{nocite}
+      \field{pages}{3664}
+      \range{pages}{1}
+    \endentry
+    \entry{landau2021guide}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c51e4a72792ff56bfd6f5d12f84bf430}{%
+           family={Landau},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe6a6e727465ea47cf641e5f5e0f82f8}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{834fc5fbca34314bdc128f763af35a2d}
+      \strng{fullhash}{834fc5fbca34314bdc128f763af35a2d}
+      \strng{bibnamehash}{834fc5fbca34314bdc128f763af35a2d}
+      \strng{authorbibnamehash}{834fc5fbca34314bdc128f763af35a2d}
+      \strng{authornamehash}{834fc5fbca34314bdc128f763af35a2d}
+      \strng{authorfullhash}{834fc5fbca34314bdc128f763af35a2d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A guide to Monte Carlo simulations in statistical physics}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{laughlin1983anomalous}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bbd903deec1f9de87f532c1db03d4058}{%
+           family={Laughlin},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima B},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{fullhash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{bibnamehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{authorbibnamehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{authornamehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{authorfullhash}{bbd903deec1f9de87f532c1db03d4058}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{18}
+      \field{title}{Anomalous quantum Hall effect: an incompressible quantum fluid with fractionally charged excitations}
+      \field{volume}{50}
+      \field{year}{1983}
+      \true{nocite}
+      \field{pages}{1395}
+      \range{pages}{1}
+    \endentry
+    \entry{li2012efficient}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc8657e87346eec5c0e15953879f598c}{%
+           family={Delft},
+           familyi={D\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=20de9f859b0b9bfb12fa85f3513c2fc1}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{45c1e7ada08eb2d876aac8b598160b74}
+      \strng{fullhash}{3f91d3b03180f375687f59652809bda2}
+      \strng{bibnamehash}{3f91d3b03180f375687f59652809bda2}
+      \strng{authorbibnamehash}{3f91d3b03180f375687f59652809bda2}
+      \strng{authornamehash}{45c1e7ada08eb2d876aac8b598160b74}
+      \strng{authorfullhash}{3f91d3b03180f375687f59652809bda2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{19}
+      \field{title}{Efficient simulation of infinite tree tensor network states on the Bethe lattice}
+      \field{volume}{86}
+      \field{year}{2012}
+      \true{nocite}
+      \field{pages}{195137}
+      \range{pages}{1}
+    \endentry
+    \entry{nagaoka1966ferromagnetism}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ce83b50eb18cbe0eacf0c9be5736e6e}{%
+           family={Nagaoka},
+           familyi={N\bibinitperiod},
+           given={Yosuke},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{8ce83b50eb18cbe0eacf0c9be5736e6e}
+      \strng{fullhash}{8ce83b50eb18cbe0eacf0c9be5736e6e}
+      \strng{bibnamehash}{8ce83b50eb18cbe0eacf0c9be5736e6e}
+      \strng{authorbibnamehash}{8ce83b50eb18cbe0eacf0c9be5736e6e}
+      \strng{authornamehash}{8ce83b50eb18cbe0eacf0c9be5736e6e}
+      \strng{authorfullhash}{8ce83b50eb18cbe0eacf0c9be5736e6e}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{1}
+      \field{title}{Ferromagnetism in a narrow, almost half-filled s band}
+      \field{volume}{147}
+      \field{year}{1966}
+      \true{nocite}
+      \field{pages}{392}
+      \range{pages}{1}
+    \endentry
+    \entry{orus2014practical}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=220e5a12680385b58fbfac3e4405944d}{%
+           family={Orús},
+           familyi={O\bibinitperiod},
+           given={Román},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{220e5a12680385b58fbfac3e4405944d}
+      \strng{fullhash}{220e5a12680385b58fbfac3e4405944d}
+      \strng{bibnamehash}{220e5a12680385b58fbfac3e4405944d}
+      \strng{authorbibnamehash}{220e5a12680385b58fbfac3e4405944d}
+      \strng{authornamehash}{220e5a12680385b58fbfac3e4405944d}
+      \strng{authorfullhash}{220e5a12680385b58fbfac3e4405944d}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Physics}
+      \field{title}{A practical introduction to tensor networks: Matrix product states and projected entangled pair states}
+      \field{volume}{349}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{117\bibrangedash 158}
+      \range{pages}{42}
+    \endentry
+    \entry{orus2009simulation}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=220e5a12680385b58fbfac3e4405944d}{%
+           family={Orús},
+           familyi={O\bibinitperiod},
+           given={Román},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe10cf33913e45c3685598c8b35bc209}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Guifré},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{388b03dcd4c88f818e9bb53c44ed3e62}
+      \strng{fullhash}{388b03dcd4c88f818e9bb53c44ed3e62}
+      \strng{bibnamehash}{388b03dcd4c88f818e9bb53c44ed3e62}
+      \strng{authorbibnamehash}{388b03dcd4c88f818e9bb53c44ed3e62}
+      \strng{authornamehash}{388b03dcd4c88f818e9bb53c44ed3e62}
+      \strng{authorfullhash}{388b03dcd4c88f818e9bb53c44ed3e62}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{9}
+      \field{title}{Simulation of two-dimensional quantum systems on an infinite lattice revisited: Corner transfer matrix for tensor contraction}
+      \field{volume}{80}
+      \field{year}{2009}
+      \true{nocite}
+      \field{pages}{094403}
+      \range{pages}{1}
+    \endentry
+    \entry{phien2015infinite}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9d92114cb8349fbd6ea480ab37f86b04}{%
+           family={Phien},
+           familyi={P\bibinitperiod},
+           given={Ho\bibnamedelima N},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9db5d3c19a20fe143a3ae941f41e50f}{%
+           family={Bengua},
+           familyi={B\bibinitperiod},
+           given={Johann\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d5a05fbf040a511cbe946e0c9f277ba}{%
+           family={Tuan},
+           familyi={T\bibinitperiod},
+           given={Hoang\bibnamedelima D},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed63fdd4111d1315987467d940a45488}{%
+           family={Corboz},
+           familyi={C\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=220e5a12680385b58fbfac3e4405944d}{%
+           family={Orús},
+           familyi={O\bibinitperiod},
+           given={Román},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{6f0b2f351064c3912b4ce42727b44cc3}
+      \strng{fullhash}{82492b0dcbd465e40645ced01c1bdc36}
+      \strng{bibnamehash}{82492b0dcbd465e40645ced01c1bdc36}
+      \strng{authorbibnamehash}{82492b0dcbd465e40645ced01c1bdc36}
+      \strng{authornamehash}{6f0b2f351064c3912b4ce42727b44cc3}
+      \strng{authorfullhash}{82492b0dcbd465e40645ced01c1bdc36}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{3}
+      \field{title}{Infinite projected entangled pair states algorithm improved: Fast full update and gauge fixing}
+      \field{volume}{92}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{035142}
+      \range{pages}{1}
+    \endentry
+    \entry{sandvik2010computational}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d7afdd68e17370e4699da96c7587d3cc}{%
+           family={Sandvik},
+           familyi={S\bibinitperiod},
+           given={Anders\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{fullhash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{bibnamehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{authorbibnamehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{authornamehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{authorfullhash}{d7afdd68e17370e4699da96c7587d3cc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AIP Conference Proceedings}
+      \field{number}{1}
+      \field{title}{Computational studies of quantum spin systems}
+      \field{volume}{1297}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{135\bibrangedash 338}
+      \range{pages}{204}
+    \endentry
+    \entry{schollwock2011density}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=47c87e3553597a3c6f21f2ae72571491}{%
+           family={Schollwöck},
+           familyi={S\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{47c87e3553597a3c6f21f2ae72571491}
+      \strng{fullhash}{47c87e3553597a3c6f21f2ae72571491}
+      \strng{bibnamehash}{47c87e3553597a3c6f21f2ae72571491}
+      \strng{authorbibnamehash}{47c87e3553597a3c6f21f2ae72571491}
+      \strng{authornamehash}{47c87e3553597a3c6f21f2ae72571491}
+      \strng{authorfullhash}{47c87e3553597a3c6f21f2ae72571491}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of physics}
+      \field{number}{1}
+      \field{title}{The density-matrix renormalization group in the age of matrix product states}
+      \field{volume}{326}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{96\bibrangedash 192}
+      \range{pages}{97}
+    \endentry
+    \entry{simon2007pseudopotentials}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8129c2a9c928bf3c21cf74dd4cf4f79c}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima H},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a38d0c4e2e7324296ca5e1766203d1e9}{%
+           family={Rezayi},
+           familyi={R\bibinitperiod},
+           given={EH},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=189ffb1acae832e846199d8074f5bca2}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Nigel\bibnamedelima R},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{4a11d0382f19463574efcb6bf27d4d82}
+      \strng{fullhash}{2fec49496b0a0a1ec33e6ec73a07d5c4}
+      \strng{bibnamehash}{2fec49496b0a0a1ec33e6ec73a07d5c4}
+      \strng{authorbibnamehash}{2fec49496b0a0a1ec33e6ec73a07d5c4}
+      \strng{authornamehash}{4a11d0382f19463574efcb6bf27d4d82}
+      \strng{authorfullhash}{2fec49496b0a0a1ec33e6ec73a07d5c4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{19}
+      \field{title}{Pseudopotentials for multiparticle interactions in the quantum Hall regime}
+      \field{volume}{75}
+      \field{year}{2007}
+      \true{nocite}
+      \field{pages}{195306}
+      \range{pages}{1}
+    \endentry
+    \entry{sutherland1988systems}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f14b796c05452911524fff8b3c4b6c52}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{f14b796c05452911524fff8b3c4b6c52}
+      \strng{fullhash}{f14b796c05452911524fff8b3c4b6c52}
+      \strng{bibnamehash}{f14b796c05452911524fff8b3c4b6c52}
+      \strng{authorbibnamehash}{f14b796c05452911524fff8b3c4b6c52}
+      \strng{authornamehash}{f14b796c05452911524fff8b3c4b6c52}
+      \strng{authorfullhash}{f14b796c05452911524fff8b3c4b6c52}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{7}
+      \field{title}{Systems with resonating-valence-bond ground states: Correlations and excitations}
+      \field{volume}{37}
+      \field{year}{1988}
+      \true{nocite}
+      \field{pages}{3786}
+      \range{pages}{1}
+    \endentry
+    \entry{tasaki1989extension}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e94d78a7b40e83c1144df9b3e52a1250}{%
+           family={Tasaki},
+           familyi={T\bibinitperiod},
+           given={Hal},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{fullhash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{bibnamehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{authorbibnamehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{authornamehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{authorfullhash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{13}
+      \field{title}{Extension of Nagaoka’s theorem on the large-U Hubbard model}
+      \field{volume}{40}
+      \field{year}{1989}
+      \true{nocite}
+      \field{pages}{9192}
+      \range{pages}{1}
+    \endentry
+    \entry{tasaki2020physics}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e94d78a7b40e83c1144df9b3e52a1250}{%
+           family={Tasaki},
+           familyi={T\bibinitperiod},
+           given={Hal},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{fullhash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{bibnamehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{authorbibnamehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{authornamehash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \strng{authorfullhash}{e94d78a7b40e83c1144df9b3e52a1250}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physics and mathematics of quantum many-body systems}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{tong2016lectures}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1841c0c41b5a5ffe8310253191fe07f}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \strng{fullhash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \strng{bibnamehash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \strng{authorbibnamehash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \strng{authornamehash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \strng{authorfullhash}{e1841c0c41b5a5ffe8310253191fe07f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1606.06687}
+      \field{title}{Lectures on the quantum Hall effect}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{troyer2004classical}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8c95c0b716ad4a10a2ab4370aca0d0ca}{%
+           family={Troyer},
+           familyi={T\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c95c0b716ad4a10a2ab4370aca0d0ca}
+      \strng{fullhash}{8c95c0b716ad4a10a2ab4370aca0d0ca}
+      \strng{bibnamehash}{8c95c0b716ad4a10a2ab4370aca0d0ca}
+      \strng{authorbibnamehash}{8c95c0b716ad4a10a2ab4370aca0d0ca}
+      \strng{authornamehash}{8c95c0b716ad4a10a2ab4370aca0d0ca}
+      \strng{authorfullhash}{8c95c0b716ad4a10a2ab4370aca0d0ca}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classical and quantum monte carlo algorithms and exact diagonalization}
+      \field{year}{2004}
+      \true{nocite}
+    \endentry
+    \entry{trugman1985exact}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=44dd0aa84cf2303c0fb211380c48ad0c}{%
+           family={Trugman},
+           familyi={T\bibinitperiod},
+           given={SA},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6790600e370720db6fa82d59b1777e26}{%
+           family={Kivelson},
+           familyi={K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{6acf5411b92a93bb3721f39debfd08c3}
+      \strng{fullhash}{6acf5411b92a93bb3721f39debfd08c3}
+      \strng{bibnamehash}{6acf5411b92a93bb3721f39debfd08c3}
+      \strng{authorbibnamehash}{6acf5411b92a93bb3721f39debfd08c3}
+      \strng{authornamehash}{6acf5411b92a93bb3721f39debfd08c3}
+      \strng{authorfullhash}{6acf5411b92a93bb3721f39debfd08c3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{8}
+      \field{title}{Exact results for the fractional quantum Hall effect with general interactions}
+      \field{volume}{31}
+      \field{year}{1985}
+      \true{nocite}
+      \field{pages}{5280}
+      \range{pages}{1}
+    \endentry
+    \entry{yang2017generalized}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d6f2b26e2b50e389f737db615a2d7427}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ad2d9e89333da11a4d49c39fe5f352a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Zi-Xiang},
+           giveni={Z\bibinithyphendelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3964403ff95bf330fb17643f241f1249}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Ching\bibnamedelima Hua},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b10452bc5c7acb1eef13d678dee81d7b}{%
+           family={Papić},
+           familyi={P\bibinitperiod},
+           given={Zlatko},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{59d00e1f326cdba6940b7495a92c3204}
+      \strng{fullhash}{d445fd120e227169f5e6cebd832862cf}
+      \strng{bibnamehash}{d445fd120e227169f5e6cebd832862cf}
+      \strng{authorbibnamehash}{d445fd120e227169f5e6cebd832862cf}
+      \strng{authornamehash}{59d00e1f326cdba6940b7495a92c3204}
+      \strng{authorfullhash}{d445fd120e227169f5e6cebd832862cf}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{14}
+      \field{title}{Generalized pseudopotentials for the anisotropic fractional quantum hall effect}
+      \field{volume}{118}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{146403}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

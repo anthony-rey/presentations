@@ -1,0 +1,115 @@
+\chapter{Superconductivity}
+
+	\section{$t-J$ model}
+
+		When a small hopping term $t\ll U$ is switched on, these states are mixed and the sharp atomic level broadens into the lower Hubbard subband. The motion of the \electron is constrained by having to avoid the creation of doubly occupied sites. Now one wishes to describe this in detail. Here one is faced with the basic difficulty of the theory of strongly correlated systems. At the ﬁrst sight, the solution may seem straightforward since there is a small parameter t$\frac t U \ll 1$, and one could attempt to treat the eﬀect of $\mc H_\text{band}$ by perturbation theory. However, the task at hand is very different from that of standard perturbation theory which is set up to handle problems with a large single-electron term and a weak interaction. In the present case, the zeroth order term is the interaction term $\mc H_U$, and the one-\electron term $\mc H_\text{band}$ is the perturbation. In the standard case, the zeroth-order ground state is nondegenerate. Here, the ground state of $\mc H_U$ has a large degeneracy. Within a degenerate set of levels, even a weak perturbation has a drastic effect. It lifts the degeneracy. There is, however, a well-known way to treat consecutive orders of $\frac t U$ systematically. It can be accomplished by a suitable canonical transformation. The idea is the following. The zeroth-order eigenstates are mixed by the perturbation $\mc H_\text{band}$. If we knew the true eigenstates, one could do a Hilbert space rotation to that basis, and should not worry about the mixing of states anymore. This full solution is usually not available, and therefore proceed iteratively. In the ﬁrst step, rotate to a basis whose states are not mixed in order $t$. In the second step, want to avoid mixing in order $t^2$, etc. While this is the general principle, one will be, in fact, content with the lowest-order result.
+
+		The Hamiltonian is
+		\be \mc H = -t \sum_{\ev{ij}} \sum_\sigma [c^\dagger_{i\sigma} c_{j\sigma} + c^\dagger_{j\sigma} c_{i\sigma}] + U \sum_j n_{j\uparrow} n_{j\downarrow} \ee
+		Decompose it as
+		\be \mc H = \mc H_\text{band} + \mc H_U \qq{and} \mc H^+_t + \mc H^-_t + \mc H^0_t \ee
+		Here $\mc H^+_t$ is the hopping process that increases the number of doubly occupied sites by one, with the notation in terms of projectors for such process
+		\be P_{j,d}c^\dagger_{j\uparrow}c_{i\uparrow} P_{i\uparrow} = n_{j\uparrow} n_{j\downarrow} c^\dagger_{j\uparrow}c_{i\uparrow} n_{i\uparrow} (1-n_{i\downarrow}) = n_{j\downarrow} c^\dagger_{j\uparrow}c_{i\uparrow} (1-n_{i\downarrow}) \ee
+		is written as
+		\be \mc H^+_t = -t \sum_{\ev{ij}} \sum_\sigma [n_{i-\sigma}c^\dagger_{i\sigma}c_{j\sigma}(1-n_{j-\sigma}) + n_{j-\sigma}c^\dagger_{j\sigma}c_{i\sigma}(1-n_{i-\sigma})] \ee
+		and similarly the one that annihilates 
+		\be \mc H^-_t = -t \sum_{\ev{ij}} \sum_\sigma [(1-n_{i-\sigma}) c^\dagger_{i\sigma}c_{j\sigma}n_{j-\sigma} + (1-n_{j-\sigma})c^\dagger_{j\sigma}c_{i\sigma}n_{i-\sigma}] \ee
+		and the remaining that does creates or annihilates one
+		\be \mc H^0_t = -t \sum_{\ev{ij}} \sum_\sigma [(1-n_{i-\sigma}) c^\dagger_{i\sigma}c_{j\sigma}(1-n_{j-\sigma}) + n_{i-\sigma}c^\dagger_{j\sigma}c_{i\sigma}n_{j-\sigma} + \text{hc}] \ee
+
+		Perform a canonical transformation to rotate the Hilbert space and avoid the mixing of the subbands. The effective Hamiltonian obtained is, expanding
+		\be \begin{split} \mc H_\text{eff} &= e^{iS}\mc H e^{-iS} = \mc H + i [S,\mc H] + \frac{i^2}{2}[S,[S,\mc H]] + \cdots \\ &= \mc H_U + \mc H^+_t + \mc H^-_t + \mc H^0_t + i[S,\mc H_U] + i[S,\mc H^+_t + \mc H^-_t + \mc H^0_t] \\ &+ \frac{i^2}{2}[S,[S,\mc H_U]] + \cdots \end{split} \ee
+		Find $S\sim \frac t U$ so that $i[S,\mc H_U]$ eliminates $H^+_t + \mc H^-_t$. Hence compute
+		\be [\mc H^+_t ,\mc H_U] = - U \mc H^+_t \qq{and} [\mc H^-_t ,\mc H_U] = U \mc H^-_t \ee
+		Therefore, one should use
+		\be S = - \frac{1}{U} (\mc H^+_t - \mc H^-_t) \ee
+		because
+		\be i[S,\mc H_U] = \frac 1 U [\mc H^+_t - \mc H^-_t,\mc H_U] = -(\mc H^+_t + \mc H^-_t) \ee
+		which exactly cancels the pieces wanted. However, there is a new term
+		\be i[S,\mc H^+_t + \mc H^-_t] = \frac 1 U [\mc H^+_t - \mc H^-_t,\mc H^+_t + \mc H^-_t] = \frac 2 U [\mc H^+_t, \mc H^-_t] \ee
+		which is almost compensated with the term
+		\be \frac{i^2}{2} [S,[S,\mc H_U]] = \frac{i^2}{2} [S,\mc H^+_t + \mc H^-_t] = - \frac 1 U [\mc H^+_t, \mc H^-_t] \ee
+		Omitting the contribution from $i[S,\mc H^0_t]$, one finally finds
+		\be \mc H_\text{eff} = \mc H^0_t + \mc H_U + \frac 1 U [\mc H^+_t,\mc H^-_t] \ee
+
+		Introduce the Hubbard operators like
+		\be X_j^{\sigma \leftarrow 0} = c^\dagger_{j\sigma}(1-n_{j\sigma}) \ee
+		such that
+		\be X_j^{c \leftarrow f} X_j^{b \leftarrow a} = \delta_{bf}  X_j^{c \leftarrow b} X_j^{b \leftarrow a} = \delta_{bf} X_j^{c \leftarrow a} \ee
+		and therefore express
+		\be c^\dagger_{j\sigma} =  X_j^{\sigma \leftarrow 0} + \eta(\sigma)  X_j^{d \leftarrow -\sigma} \qq{with} \eta(\sigma) \begin{cases} +1 & \sigma = \uparrow \\ -1 & \sigma = \downarrow \end{cases} \ee
+		Hence rewrite
+		\be \mc H^+_t = -t \sum_{\ev{ij}} \sum_\sigma \eta(\sigma) [X_i^{d\leftarrow -\sigma}X_j^{0\leftarrow \sigma} + X_j^{d\leftarrow -\sigma}X_i^{0\leftarrow \sigma}] \ee
+		as well as
+		\be \mc H^-_t = -t \sum_{\ev{ij}} \sum_\sigma \eta(\sigma) [X_i^{\sigma\leftarrow 0}X_j^{-\sigma \leftarrow d} + X_j^{\sigma \leftarrow 0}X_i^{-\sigma\leftarrow d}] \ee
+
+		Now, separate the sub-Hamiltonians, to compute 
+		\be \begin{split} [\mc H^+_t,\mc H^-_t] &= \sum_{\ev{ij}} \sum_{\ev{kl}} [\mc H^+_{t,ij},\mc H^-_{t,kl}] \\ &= \sum_{\ev{ij}} [\mc H^+_{t,ij},\mc H^-_{t,ij}] +  \sum_{\ev{ijk}} [\mc H^+_{t,ij},\mc H^-_{t,jk}] \end{split} \ee
+		with, for only the hopping $i\to j$
+		\be \begin{split} \frac 1 U [\mc H^+_{t,ij},\mc H^-_{t,ij}] &= -\frac 1 U \mc H^+_{t,ij} \mc H^+_{t,ij} \\ &= -\frac{t^2}{U} \sum_{\sigma,\sigma'} \eta(\sigma)\eta(\sigma') [X_j^{\sigma'\leftarrow 0}X_i^{-\sigma' \leftarrow d} X_i^{d \leftarrow -\sigma'}X_j^{0\leftarrow \sigma}] \\ &= -\frac{t^2}{U} \sum_\sigma X_i^{-\sigma\leftarrow -\sigma} X_j^{\sigma\leftarrow \sigma} + \frac{t^2}{U} \sum_\sigma X_i^{\sigma\leftarrow -\sigma}X_j^{\sigma\leftarrow -\sigma} \\ &= \frac{2t^2}{U}\left[S_i^z S_j^z - \frac{n_in_j}{4}\right] + \frac{t^2}{U} \left[S_i^+ S_j^- + S_j^+ S_i^-\right] \\ &= \frac{2t^2}{U}\left[\vb* S_i \cdot \vb* S_j - \frac{n_in_j}{4}\right] \end{split} \ee
+		Hence, in total
+		\be \begin{split} \mc H_\text{eff} &= \mc H_{t-J} \\ &= -t  \sum_{\ev{ij}} \sum_\sigma (1-n_{i-\sigma})c^\dagger_{i\sigma}c_{j\sigma}(1-n_{j-\sigma}) + \text{hc} \\ &+ \frac{4t^2}{U} \sum_{\ev{ij}} \left[\vb* S_i \cdot \vb* S_j - \frac{n_in_j}{4}\right] + 3\text{ sites terms} \end{split} \label{eq:tjham} \ee
+
+	\section{Mean-field superconductivity}
+
+		Approximate the hopping term in the Hamiltonian \eqref{eq:tjham} as
+		\be -t (1-n_{i-\sigma})c^\dagger_{i\sigma}c_{j\sigma}(1-n_{j-\sigma}) \simeq -t \delta c^\dagger_{i\sigma}c_{j\sigma} \ee
+		where $\delta$ is the fractional difference of $n$ from the half-filled case that was considered along the previous pages. Hence, the Hamiltonian is
+		\be \mc H =  -t \delta \sum_{\ev{ij}} \sum_\sigma (c^\dagger_{i\sigma}c_{j\sigma} + \text{hc}) - 2J \sum_{\ev{ij}} b^\dagger_{ij} b_{ij} \ee
+		with the notation in valence bond singlets
+		\be b^\dagger_{ij} = c^\dagger_{i\uparrow}c^\dagger_{j\downarrow} - c^\dagger_{i\downarrow}c^\dagger_{j\uparrow} \ee
+
+		BSC theory is quite good, but sometimes fails. In particular, to treat high-$T_C$ superconductivity, one uses mean-field approximation among other methods. Start in the Fourier space
+		\be \ev{b_{ij}} = \sum_{k,q} e^{ikr}e^{iq(r_i+\tau)} \underbrace{\ev{c^\dagger_{k\uparrow}c^\dagger_{q\downarrow} - c^\dagger_{k\downarrow}c^\dagger_{q\uparrow}}}_{\delta_{k,-q}\Delta_k} = \sum_k e^{-ik\tau} \Delta_k \ee
+		that gives the Hamiltonian in the mean-field approximation
+		\be \mc H = -2J \sum_{\ev{ij}} b_{ij} \ev{b^\dagger_{ij}} + b^\dagger_{ij} \ev{b_{ij}} - \ev{b^\dagger_{ij}}\ev{b_{ij}} \ee
+		The second can be expressed as, since there is no dependence on the sites $i$ and $j$, thus take the site $0$,
+		\be \begin{split} &\quad -2J \frac 1 2 \sum_{i,\tau} \ev{b_{0\tau}} [c^\dagger_{i\uparrow}c^\dagger_{i+\tau\downarrow} - c^\dagger_{i\downarrow}c^\dagger_{i+\tau\uparrow}] \\ &= -J \sum_{i,\tau,h,q} [\sum_{k'} e^{-ik'\tau}\Delta_{k'}] e^{ikr}e^{iq(r_i+\tau)} [c^\dagger_{k\uparrow}c^\dagger_{q\downarrow} - c^\dagger_{k\downarrow}c^\dagger_{q\uparrow}] \\ &= -2JN \sum_{\tau,k,k'} e^{i(k-k')\tau} \Delta_{k'} c^\dagger_{k\uparrow}c^\dagger_{-k\downarrow} \\ &= -4N \sum_{k,k'} V_{k,k'} \Delta_{k'} c^\dagger_{k\uparrow}c^\dagger_{-k\downarrow} \end{split} \ee
+		with the introduction of
+		\be V_{k,k'} = \frac J 2 \sum_\tau e^{i(k-k') \tau} \ee
+		The third term is expressed as
+		\be -2J \frac 1 2 \sum_{i,\tau} e^{i(k-k')\tau} \Delta^*_k \Delta_{k'} = 2N \sum_{k,k'} V_{k,k'} \Delta^*_k \Delta_{k'} \ee
+		Adding a term with chemical potential $\mu$
+		\be \mc H_\mu = \mu \sum_i c^\dagger_{i\sigma}c_{i\sigma} \ee
+		Therefore, regroup all the term to get
+		\be \begin{split} \mc H &= \sum_{k,\sigma} [\varepsilon_k -\mu] c^\dagger_{k\sigma} c_{k\sigma} - 4N \sum_{k,k'}[V_{k,k'} c^\dagger_{k\uparrow}c^\dagger_{-k\downarrow} + \text{hc}] \\ &+ 2N \sum_{k,k'} V_{k,k'} \Delta^*_k \Delta_{k'} \end{split} \ee
+		with $\varepsilon_k = -2\delta t(\cos k_x + \cos k_y)$.
+
+		Perform a Bogoliubov transformation to get
+		\be \mc H =  \sum_{k,\sigma} E_k  \left[\alpha^\dagger_{k\sigma} \alpha_{k\sigma} -\frac 1 2 \right]+ 2N \sum_{k,k'} V_{k,k'} \Delta^*_k \Delta_{k'} \ee
+		with 
+		\be E_k = \sqrt{(\varepsilon_k - \mu)^2 + \abs{\tilde \Delta_k}^2} \qq{and} \tilde \Delta_k = 4N \sum_{k'} V_{k,k'} \Delta_{k'} \ee
+		The ground state of such model is
+		\be \begin{split} \ket{\text{GS}} &= \mc P_N \prod_k (u_k + v_kc^\dagger_{k\uparrow}c^\dagger_{k\downarrow}) \ket 0 \\ &= \mc P_N (b^\dagger)^N \ket 0 \end{split} \ee
+		with 
+		\be b^\dagger = \sum_{r,n} c^\dagger_{r\uparrow}c^\dagger_{r+n\downarrow} \ee
+		which corresponds to a resonating valence bond state.
+
+		To derive the self-consistent equation, compute the partition function
+		\be \begin{split} Z &= \tr e^{-\beta \mc H} \\ &= e^{-2\beta N \sum_k \tilde \Delta_k \Delta^*_k} \tr e^{\beta \sum_{k,\sigma} E_k(\alpha^\dagger_{k\sigma} \alpha_{k\sigma} -\frac 1 2 )} \\ &= e^{-2\beta N \sum_k \tilde \Delta_k \Delta^*_k} \underbrace{e^{\beta \sum_{k,\sigma} E_k} \prod_k [1+e^{-\beta E_k}]^2}_{\prod_k [e^{\frac{\beta E_k}{2}} + e^{-\frac{\beta E_k}{2}}]^2} \\ &= 4^N e^{-2\beta N \sum_k \tilde \Delta_k \Delta^*_k} \prod_k \cosh^2 \frac{\beta E_k}{2} \end{split} \ee
+		and the free energy is written 
+		\be \begin{split} F &= -k_\text{B} T \ln Z \\ &= -2 \text{B} T \ln 2 + 2N  \sum_k \tilde \Delta_k \Delta^*_k - 2k_\text{B} T \sum_k \ln \cosh \frac{\beta E_k}{2} \end{split} \ee
+		Thus, try to minimize the free energy
+		\be \begin{split} \pdv{F}{\Delta^*_q} &= 0 \\ &= 2N \tilde \Delta_q - 2k_\text{B} T \sum_k \tanh \frac{\beta E_k}{2} \frac{\beta}{2} \pdv{E_k}{\Delta^*_q} \\ &= 8N^2\sum_k \left[ \delta_k - \sum_{k'} V_{k,k'} \Delta_{k'} \frac{\tanh \frac{\beta E_{k'}}{2}}{2E_{k'}} \right] V_{k,q} \end{split} \ee
+		Therefore the self-consistent equation
+		\be \Delta_k = \sum_{k'} V_{k,k'} \Delta_{k'} \frac{\tanh \frac{\beta E_{k'}}{2}}{2E_{k'}} \ee
+		which has general solution
+		\be \Delta_k = sc_0 + dc_2 \qq{with} s,d\in \mathbb C \ee
+		and with
+		\be c_0 = \cos k_x + \cos k_y \qq{and} c_2 = \cos k_x - \cos k_y \ee
+		representing the $s$- and $d$-waves that are cubic harmonics. Actually, the $d$-waves have higher $T_C$ and turn out to be useful under such considerations. Near criticality
+		\be \Delta = \sum_{k'} V_{k,k'} \Delta_{k'} \frac{\tanh \frac{\varepsilon_{k'}-\mu}{2k_\text{B}T_C}}{2(\varepsilon_{k'}-\mu)} \ee
+		and the coupling constant becomes
+		\be \frac 1 J = \sum_{k'} \frac{c_i(k')}{2(\varepsilon_{k'}-\mu)} \tanh \frac{\varepsilon_{k'}-\mu}{2k_\text{B}T_C} \qq{with} i = 0,2 \ee
+		At half-filling, the $s$- and $d$-wave have the same $J$. But close to half-filling, the $d$-wave solution has higher $T_C$.
+
+		At low temperatures, the free energy is
+		\be F = \frac 1 J [\abs{s}^2 + \abs{d}^2] - 2k_\text{B}T \sum_k \ln \cosh \frac{\beta E_k}{2} \ee 
+		and the energy
+		\be E^2_k = (\varepsilon_{k'}-\mu)^2 + \abs{s}^2c_0^2 + \abs{d}^2c_2^2 + 2sd\cos \theta c_0(k)c_2(k) \ee
+		with $\theta$ the relative phase between $s$ and $d$. The energetically favorable configuration is for $\theta = \frac \pi 2$. At half-filling and $T=0$, $\abs{s}=\abs{d}$, one has
+		\be \Delta_k = \cos k_x + i \cos k_y \ee
+
+
+
+

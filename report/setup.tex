@@ -1,0 +1,81 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[american]{babel}
+\usepackage{indentfirst}
+\usepackage[style=philosophy-modern,backend=biber,hyperref]{biblatex}
+\usepackage{chngpage}
+\usepackage{calc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{lipsum}
+\usepackage{shapepar}
+\usepackage{pifont}
+\usepackage{tabularx}
+\usepackage{amsfonts,amsthm,amsmath,amssymb}
+\usepackage{wrapfig}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+
+\usepackage[eulerchapternumbers,subfig,beramono,pdfspacing,listings,dottedtoc,eulermath,floatperchapter,manychapters]{classicthesis}
+\usepackage{arsclassica}
+
+\makeatletter
+    \@ifpackageloaded{babel}
+    {\addto\extrasamerican{
+        \renewcommand*{\figureautorefname}{Figure}
+        \renewcommand*{\tableautorefname}{Table}
+        \renewcommand*{\partautorefname}{Part}
+        \renewcommand*{\chapterautorefname}{Chapter}
+        \renewcommand*{\sectionautorefname}{Section}
+        \renewcommand*{\subsectionautorefname}{Section}
+        \renewcommand*{\subsubsectionautorefname}{Section}
+        \renewcommand{\figurename}{\textit{\textsf{Figure}}}
+        \renewcommand{\tablename}{\textit{\textsf{Table}}}
+        }
+        \providecommand{\subfigureautorefname}{\figureautorefname}
+    }{\relax}
+\makeatother
+
+\renewcommand\formatchapter[1]{% 
+  \begin{minipage}[b]{0.15\linewidth}
+    \chapterNumber
+  \end{minipage}%
+  \begin{minipage}[b]{0.6\linewidth}
+    \raggedright\spacedallcaps{#1}
+  \end{minipage}
+} 
+
+\hypersetup{
+    colorlinks=true, linktocpage=true, pdfstartpage=1, 
+    pdfstartview=FitV, breaklinks=true, pdfpagemode=UseNone, 
+    pageanchor=true, pdfpagemode=UseOutlines,
+    plainpages=false, bookmarksnumbered,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    hypertexnames=true, pdfhighlight=/O,
+    urlcolor=mulberry, linkcolor=mulberry, 
+    citecolor=webgreen,
+    hyperfootnotes=false,pdfpagelabels,
+    pdfcreator={pdfLaTeX},
+    %pdfproducer={LaTeX with ArsClassica}
+}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+\newcommand{\myName}{Anthony REY}
+\newcommand{\myTitle}{Strongly correlated systems in 2D : analytical and numerical approaches}
+\newcommand{\mySubtitle}{Lecture Notes TP \RomanNumeralCaps{4}}
+\newcommand{\myProf}{Pr. Frédéric MILA}
+
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\mc}{\mathcal}
+\newcommand{\electron}{$e^-$ }
+
+
+
